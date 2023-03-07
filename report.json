@@ -1,0 +1,134 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/mnt/c/Users/a94a0017/VSC/static-web-apps/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "chromium",
+        "testDir": "/mnt/c/Users/a94a0017/VSC/static-web-apps/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/mnt/c/Users/a94a0017/VSC/static-web-apps/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "firefox",
+        "testDir": "/mnt/c/Users/a94a0017/VSC/static-web-apps/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/mnt/c/Users/a94a0017/VSC/static-web-apps/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "webkit",
+        "testDir": "/mnt/c/Users/a94a0017/VSC/static-web-apps/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "pw-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFolder": "pw-report",
+          "outputFile": "report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "rootDir": "/mnt/c/Users/a94a0017/VSC/static-web-apps/tests",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.22.2",
+    "workers": 4,
+    "webServer": {
+      "command": "npm run start",
+      "port": 8000
+    },
+    "_globalOutputDir": "/mnt/c/Users/a94a0017/VSC/static-web-apps",
+    "_configDir": "/mnt/c/Users/a94a0017/VSC/static-web-apps",
+    "_testGroupsCount": 3
+  },
+  "suites": [
+    {
+      "title": "playwright.spec.ts",
+      "file": "playwright.spec.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [
+        {
+          "title": "basic test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 0,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            },
+            {
+              "timeout": 0,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "firefox",
+              "results": [],
+              "status": "skipped"
+            },
+            {
+              "timeout": 0,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "file": "playwright.spec.ts",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "message": "Process from config.webServer was not able to start. Exit code: 127",
+      "stack": "Error: Process from config.webServer was not able to start. Exit code: 127\n    at Object.onceWrapper (events.js:421:26)"
+    }
+  ]
+}
